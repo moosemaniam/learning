@@ -1,0 +1,11 @@
+/** 
+* @file design.txt
+* @brief 
+* @author Vikasmk
+* @version 01
+* @date 2015-07-28
+*/
+
+Get tweets for a given usernames.(Use 2 names to start)
+Use 10% of these tweets to train a Naive Bayes classifier
+Predict the other tweets and check your accuracy
