@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mooseman/projects/learning/opencv/cpp/facedetection/facedetect.cpp
+opencv2/objdetect/objdetect.hpp
+/home/mooseman/projects/learning/opencv/cpp/facedetection/opencv2/objdetect/objdetect.hpp
+opencv2/highgui/highgui.hpp
+/home/mooseman/projects/learning/opencv/cpp/facedetection/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+/home/mooseman/projects/learning/opencv/cpp/facedetection/opencv2/imgproc/imgproc.hpp
+iostream
+-
+stdio.h
+-
+

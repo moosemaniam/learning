@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( FaceDetection)
+find_package( OpenCV REQUIRED )
+add_executable( Facedetect facedetect.cpp )
+target_link_libraries( Facedetect ${OpenCV_LIBS} )

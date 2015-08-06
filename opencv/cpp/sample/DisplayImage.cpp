@@ -12,15 +12,18 @@ int main(int argc, char** argv )
     }
 
     Mat image;
-    image = imread( argv[1], 1 );
+    image = imread( argv[1], 1);
+    
+    Mat roi_image(image,Rect(10,10,10,10)); 
 
     if ( !image.data )
     {
         printf("No image data \n");
         return -1;
     }
+
     namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", image);
+    imshow("Display Image", roi_image);
 
     waitKey(0);
 
