@@ -1,0 +1,15 @@
+/** 
+* @file design.txt
+* @brief Design document
+* @author Vikasmk
+* @version 1.0
+* @date 2015-08-07
+*/
+
+To do :An algorithm detect coconut trees.
+
+Design:
+1)train a classifier with images of coconut trees.
+2)Give random images with /without coconut trees.
+3)Try to get atleast 80% accuracy
+

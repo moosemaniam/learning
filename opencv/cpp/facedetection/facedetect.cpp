@@ -26,8 +26,8 @@
    Mat frame;
 
    //-- 1. Load the cascades
-   if( !face_cascade.load( face_cascade_name ) ){ printf("--(!)Error loading\n"); return -1; };
-   if( !eyes_cascade.load( eyes_cascade_name ) ){ printf("--(!)Error loading\n"); return -1; };
+   if( !face_cascade.load( face_cascade_name ) ){ printf("--(!)Error loading face_cascade\n"); return -1; };
+   if( !eyes_cascade.load( eyes_cascade_name ) ){ printf("--(!)Error loading eyes_cascade\n"); return -1; };
 
    //-- 2. Read the video stream
    capture = cvCaptureFromCAM( -1 );
