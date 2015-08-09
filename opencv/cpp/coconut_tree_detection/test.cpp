@@ -14,6 +14,31 @@
  using namespace std;
  using namespace cv;
 
+#define NO_OF_BINS 256
+ class ImageInfo
+{
+    Mat imageRaw;
+    int histSize ;/*Size of histogram*/
+    vector<Mat> bgrPlanes; /*Histogram will be split into rgb subspace*/
+    float range[2];
+    const float* histRange;
+};
+
+ImageInfo::ImageInfo(Mat aMat)
+{
+    Mat b_hist,r_hist,g_hist;
+    histSize = NO_OF_BINS;
+    /*Copy to imageRaw*/
+   aMat.copyTo (imageRaw);
+   cv::split(imageRaw,bgrPlanes);
+
+   range[0] = 0;
+   range[1] = NO_OF_BINS;
+
+   histRange =  range ;
+
+   calcHist(&bgrPlanes[0],1,0,Mat(),b_hist,1,&histSize,true,false);
+}
 #define NO_IMAGES 10
 
 /*Open all files in a given path*/
@@ -46,6 +71,5 @@ int main()
             waitKey(0);
         }
     }
-
 
 }
